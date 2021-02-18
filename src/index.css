@@ -1,13 +1,84 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.row {
+    display: flex;
+  }
+
+.column {
+    padding: 10px;
+  }
+
+.input {
+    width: 300;
+  }
+
+.button {
+    margin: 2px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.deleteButton {
+  margin: 2px;
 }
+
+.disabledButton{
+  margin: 2px;
+  cursor: not-allowed;
+  pointer-events: none;
+  background: rgb(204, 204, 204);
+}
+
+.button:hover {
+  background-color: lightblue;
+}
+
+.deleteButton:hover {
+  background-color: lightpink;
+}
+
+.allBooks {
+  border-style: solid;
+  border-width: thin;
+  width: 300px;
+  height: 155px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.listItem {
+  margin-left: 10px;
+  margin-top: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden; 
+  margin-bottom: 10px;
+}
+
+.listItem:hover {
+  border-bottom: 2px solid lightgreen;
+  border-top: 2px solid lightgreen;
+  background-color: rgb(211, 228, 211);
+}
+
+.selectedItem {
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid red;
+  border-top: 2px solid red;
+  background-color: rgb(243, 220, 223);
+}
+
+.selectedItem:hover {
+  background-color: rgb(250, 227, 218);
+}
+
+.notification{
+  margin-top: 10px;
+  border-style: solid;
+  border-width: thin;
+  width: 300px;
+  background-color: rgb(243, 220, 223);
+}
+
+.notificationText{
+  margin: 10px;
+}
+
+
